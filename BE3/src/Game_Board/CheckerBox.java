@@ -8,7 +8,7 @@ public class CheckerBox {
 	public CheckerBox(int aNbLine, int aNbColumn) {
 		throw new UnsupportedOperationException();
 	}
-
+//totop
 	public int getLine() {
 		return this._line;
 	}
