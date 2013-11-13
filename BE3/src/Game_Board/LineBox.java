@@ -1,8 +1,8 @@
 package Game_Board;
 
 public class LineBox {
-	private int _index;
-	public LineBoard _unnamed_LineBoard_;
+	private int index;
+	public LineBoard unnamed_LineBoard;
 
 	/**
 	 * Donne la case sur laquelle doit réellement aller le pion.
@@ -15,7 +15,7 @@ public class LineBox {
 	 * Donne le numéro de la case
 	 */
 	public int getIndex() {
-		return this._index;
+		return this.index;
 	}
 
 	public LineBox(int aIndex) {
@@ -23,6 +23,6 @@ public class LineBox {
 	}
 
 	public void setIndex(int aPIndex) {
-		this._index = aPIndex;
+		this.index = aPIndex;
 	}
 }

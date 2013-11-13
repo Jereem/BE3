@@ -1,6 +1,5 @@
 package Game_Board;
 
-import Jeu_de_plateau.Game;
 
 public class Board {
 	protected int nbCase = 0;

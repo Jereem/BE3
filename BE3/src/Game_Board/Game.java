@@ -1,23 +1,25 @@
 package Game_Board;
 
+import java.util.ArrayList;
+ 
 public class Game {
-	private Player[] _player;
-	private int _number_of_player;
-	private String _rules;
-	private Board _board;
-	public Player _unnamed_Player_;
-	public Board _unnamed_Board_;
+	private ArrayList<Player> myPlayers;
+	private int numPlayer;
+	private String myRules;
+	private Board myBoard;
+	public Player unnamed_Player_;
+	public Board unnamed_Board_;
 
-	public String getHelp() {
+        public String getHelp() {
 		throw new UnsupportedOperationException();
 	}
 
 	public int getNumber_of_player() {
-		return this._number_of_player;
+		return this.numPlayer;
 	}
 
 	public void setNumber_of_player(int aNumber_of_player) {
-		this._number_of_player = aNumber_of_player;
+		this.numPlayer = aNumber_of_player;
 	}
 
 	public void getAttribute() {
@@ -29,18 +31,18 @@ public class Game {
 	}
 
 	public String getRules() {
-		return this._rules;
+		return this.myRules;
 	}
 
 	public void setRules(String aRules) {
-		this._rules = aRules;
+		this.myRules = aRules;
 	}
 
 	public Board getBoard() {
-		return this._board;
+		return this.myBoard;
 	}
 
 	public void setBoard(Board aBoard) {
-		this._board = aBoard;
+		this.myBoard = aBoard;
 	}
 }
