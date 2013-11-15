@@ -7,7 +7,8 @@ public class Player {
 	private Color myColor;
 	private int winCounter;
 	public Game myGame;
-
+// coucou
+        
 	public String getName() {
 		return this.myName;
 	}
