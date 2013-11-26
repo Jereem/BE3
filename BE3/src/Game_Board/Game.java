@@ -4,10 +4,11 @@ import java.util.ArrayList;
  
 public class Game {
 	private ArrayList<Player> myPlayers;
-	private int numPlayer;
+	// private int numPlayer;
 	private String myRules;
 	private Board myBoard;
-	public Player unnamed_Player_;
+	
+        public Player unnamed_Player_;
 	public Board unnamed_Board_;
 
         public String getHelp() {

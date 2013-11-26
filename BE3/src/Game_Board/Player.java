@@ -2,13 +2,21 @@ package Game_Board;
 
 import java.awt.Color;
 
+
 public class Player {
 	private String myName;
 	private Color myColor;
 	private int winCounter;
-	public Game myGame;
-// coucou
+        // private int nbPoint;
         
+	
+
+        public Player(){
+            this.myName="jeje";
+            this.myColor=Color.BLACK;
+            this.winCounter=0;   
+        }
+                
 	public String getName() {
 		return this.myName;
 	}
