@@ -1,3 +1,4 @@
+// test ted
 package Game_Board;
 
 import java.awt.Color;
@@ -9,7 +10,6 @@ public class Player {
 	private int winCounter;
         // private int nbPoint;
         
-	
 
         public Player(){
             this.myName="jeje";
