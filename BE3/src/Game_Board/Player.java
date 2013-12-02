@@ -14,7 +14,7 @@ public class Player {
         public Player(){
             this.myName="anonymous";
             this.myColor=Color.BLACK;
-            this.winCounter=0;   
+            this.winCounter=0;
         }
         
         public Player(String n, Color c){
