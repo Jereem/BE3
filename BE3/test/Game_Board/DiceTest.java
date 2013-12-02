@@ -1,9 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Game_Board;
 
 import org.junit.After;
@@ -15,7 +13,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author jeremygillet
+ * @author Manon
  */
 public class DiceTest {
     
@@ -44,11 +42,10 @@ public class DiceTest {
     @Test
     public void testGetNumber_of_option() {
         System.out.println("getNumber_of_option");
-        Dice instance = new Dice();
+        Dice instance = null;
         int expResult = 0;
         int result = instance.getNumber_of_option();
         assertEquals(expResult, result);
-       
     }
 
     /**
@@ -57,11 +54,9 @@ public class DiceTest {
     @Test
     public void testSetNumber_of_option() {
         System.out.println("setNumber_of_option");
-        int aNumber_of_option = 0;
-        Dice instance = new Dice();
-        instance.setNumber_of_option(aNumber_of_option);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int val_min = 0;
+        int val_max = 0;
+        Dice instance = null;
+        instance.setNumber_of_option(val_min, val_max);
     }
-    
 }

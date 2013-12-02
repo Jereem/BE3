@@ -11,11 +11,11 @@ public class Dice {
             this.value = valeur;
         }
 
-	public int getNumber_of_option() {
+	public int getValue() {
 		return this.value;
 	}
 
-	public void setNumber_of_option(int val_min,int val_max) {
+	public void setValue(int val_min,int val_max) {
             Random r = new Random();
             this.value = val_min + r.nextInt(val_max-val_min);
 	}
