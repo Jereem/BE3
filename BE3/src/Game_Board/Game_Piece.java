@@ -4,11 +4,11 @@ package Game_Board;
 import java.awt.Color;
 
 public class Game_Piece {
-	public Box coordinates;
+	private Box coordinates;
 	private boolean isAlive;
 	private Color couleur;
 	private String name;
-	public Board unnamed_Board;
+	private Board unnamed_Board;
 
 	public Game_Piece(Box b, boolean aalive , Color c, String s, Board uB) {
 		this.coordinates = b;
