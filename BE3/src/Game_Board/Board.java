@@ -8,7 +8,7 @@ public class Board {
 	public Game unnamed_Game_;
 	public LineBoard unnamed_LineBoard_;
 	protected Game_Piece unnamed_Game_Piece_;
-
+///vive les biotech
 	public Board(int aNbCase) {
 		throw new UnsupportedOperationException();
 	}
