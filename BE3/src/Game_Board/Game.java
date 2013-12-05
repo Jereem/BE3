@@ -4,32 +4,26 @@ import java.util.ArrayList;
  
 public class Game {
 	private ArrayList<Player> myPlayers;
-	// private int numPlayer;
 	private String myRules;
 	private Board myBoard;
+        private boolean isAlive;
+        
 	
-        public Player unnamed_Player_;
-	public Board unnamed_Board_;
+      
 
-        public String getHelp() {
-		throw new UnsupportedOperationException();
-	}
-
-	public int getNumber_of_player() {
-		return this.numPlayer;
-	}
-
-	public void setNumber_of_player(int aNumber_of_player) {
-		this.numPlayer = aNumber_of_player;
-	}
-
-	public void getAttribute() {
-		throw new UnsupportedOperationException();
-	}
-
-	public void setAttribute(Object aAttribute) {
-		throw new UnsupportedOperationException();
-	}
+        public Game (){
+            this.myPlayers={};
+            this.myBoard={};
+            this.isAlive=true;
+            this.myRules="soyez_gentils" ;
+            
+        }
+        
+        
+        
+        
+        
+	
 
 	public String getRules() {
 		return this.myRules;

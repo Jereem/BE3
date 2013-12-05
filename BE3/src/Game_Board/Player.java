@@ -12,9 +12,15 @@ public class Player {
         
 
         public Player(){
-            this.myName="jeje";
+            this.myName="anonymous";
             this.myColor=Color.BLACK;
-            this.winCounter=0;   
+            this.winCounter=0;
+        }
+        
+        public Player(String n, Color c){
+            this.myName=n;
+            this.myColor=c;
+            this.winCounter=0;
         }
                 
 	public String getName() {
@@ -37,7 +43,7 @@ public class Player {
 		return this.winCounter;
 	}
 
-	public void setWinning_counter(int aWinning_counter) {
-		this.winCounter = aWinning_counter;
+	public void setWinning_counter() {
+		this.winCounter +=1;
 	}
 }

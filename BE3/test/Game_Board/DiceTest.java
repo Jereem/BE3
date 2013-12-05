@@ -44,11 +44,12 @@ public class DiceTest {
     @Test
     public void testGetNumber_of_option() {
         System.out.println("getNumber_of_option");
-        Dice instance = new Dice();
+        Dice instance = null;
         int expResult = 0;
         int result = instance.getNumber_of_option();
         assertEquals(expResult, result);
-       
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,9 +58,38 @@ public class DiceTest {
     @Test
     public void testSetNumber_of_option() {
         System.out.println("setNumber_of_option");
-        int aNumber_of_option = 0;
-        Dice instance = new Dice();
-        instance.setNumber_of_option(aNumber_of_option);
+        int val_min = 0;
+        int val_max = 0;
+        Dice instance = null;
+        instance.setNumber_of_option(val_min, val_max);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getValue method, of class Dice.
+     */
+    @Test
+    public void testGetValue() {
+        System.out.println("getValue");
+        Dice instance = null;
+        int expResult = 0;
+        int result = instance.getValue();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setValue method, of class Dice.
+     */
+    @Test
+    public void testSetValue() {
+        System.out.println("setValue");
+        int val_min = 0;
+        int val_max = 0;
+        Dice instance = null;
+        instance.setValue(val_min, val_max);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
