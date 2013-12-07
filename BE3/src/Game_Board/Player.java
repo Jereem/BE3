@@ -1,4 +1,4 @@
-// test ted
+
 package Game_Board;
 
 import java.awt.Color;

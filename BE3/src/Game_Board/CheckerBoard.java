@@ -1,11 +1,14 @@
 package Game_Board;
 
-import Game_Board.Board;
-
-public class CheckerBoard {
-	private int _height = 0;
-	private int _width = 0;
-	private CheckerBox[] _checker;
-	public Board _unnamed_Board_;
-	public CheckerBox _unnamed_CheckerBox_;
+public class CheckerBoard extends Board{
+	private int height;
+	private int width;
+	private CheckerBox[][] checker;
+        
+	public CheckerBoard(int pHeight, int pWidth){
+            super();
+            this.height = pHeight;
+            this.width = pWidth;
+            CheckerBox checker[][] = new CheckerBox[height][width];
+        };
 }

@@ -1,9 +1,10 @@
 package Game_Board;
 
-import Game_Board.Board;
+public class LineBoard extends Board{
+	private LineBox[] path;
 
-public class LineBoard {
-	private LineBox[] _path;
-	public Board _unnamed_Board_;
-	public LineBox _unnamed_LineBox_;
+	public LineBoard(){
+            super();
+            LineBox[] path = new LineBox[nbBox];
+        }
 }
