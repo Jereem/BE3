@@ -1,14 +1,11 @@
 package Game_Board;
 
+import java.util.ArrayList;
 
 public class Board {
-	protected int nbCase = 0;
-	private Game game;
-	public CheckerBoard unnamed_CheckerBoard_;
-	public Game unnamed_Game_;
-	public LineBoard unnamed_LineBoard_;
-	protected Game_Piece unnamed_Game_Piece_;
-///vive les biotech
+	protected int nbBox;
+	protected Arraylist<Game_Piece> gamePieces = new ArrayList<Game_Piece>();
+        
 	public Board(int aNbCase) {
 		throw new UnsupportedOperationException();
 	}
@@ -18,14 +15,6 @@ public class Board {
 	}
 
 	public void setNbBox(int aPNbCase) {
-		throw new UnsupportedOperationException();
-	}
-
-	public Game getReferee() {
-		throw new UnsupportedOperationException();
-	}
-
-	public void setReferee(Game aPReferee) {
 		throw new UnsupportedOperationException();
 	}
 
