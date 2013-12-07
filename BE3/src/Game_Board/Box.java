@@ -1,17 +1,18 @@
 package Game_Board;
 
-public class Box extends LineBox {
-	private boolean busy;
+public class Box{
+	private boolean isBusy;
 
 	public Box() {
-		this.busy=false;
+		this.isBusy=false;
 	}
 
-	public void setPiece( boolean isBusy) {
-		this.busy=isBusy;
+	public void setIsBusy(boolean p) {
+		this.isBusy=p;
 	}
+        
+        public boolean getIsBusy(){
+            return(this.isBusy);
+        }
 
-	public boolean isBusy()   {
-	return this.busy;	
-	}
 }

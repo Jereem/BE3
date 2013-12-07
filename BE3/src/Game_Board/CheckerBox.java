@@ -1,27 +1,37 @@
 package Game_Board;
 
+import java.awt.Color;
+
 public class CheckerBox {
-	private int _line;
-	private int _column;
-	public CheckerBoard _unnamed_CheckerBoard_;
+	private int line;
+	private int column;
+        private Color couleur;
 
 	public CheckerBox(int aNbLine, int aNbColumn) {
 		throw new UnsupportedOperationException();
 	}
-//totop
+
 	public int getLine() {
-		return this._line;
+		return this.line;
 	}
 
 	public int getColumn() {
-		return this._column;
+		return this.column;
 	}
 
 	public void setLine(int aPLine) {
-		this._line = aPLine;
+		this.line = aPLine;
 	}
 
 	public void setColumn(int aPColumn) {
-		this._column = aPColumn;
+		this.column = aPColumn;
+	}
+        
+        public Color getCouleur() {
+		return this.couleur;
+	}
+
+	public void setCouleur(Color aPCouleur) {
+		this.couleur = aPCouleur;
 	}
 }

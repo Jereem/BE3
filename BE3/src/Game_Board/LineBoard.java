@@ -1,10 +1,13 @@
 package Game_Board;
 
-public class LineBoard extends Board{
-	private LineBox[] path;
+public class LineBoard extends Board {
 
-	public LineBoard(){
-            super();
-            LineBox[] path = new LineBox[nbBox];
+    private final LineBox[] path = new LineBox[nbBox];
+    
+    public LineBoard(int pNbBox) {
+        super();
+        for (int i = 0; i < this.path.length; i++) {
+            this.path[i].setIndex(i);
         }
+    }
 }
