@@ -5,12 +5,15 @@
  */
 
 package Main;
-package Game_Board;
+import Game_Board.*;
 
 /**
  *
  * @author jeremygillet
  */
 public class Main {
+    
+    Game g=new Game;
+    
     
 }
