@@ -1,3 +1,7 @@
+/**
+ *
+ * @author teddy.delavallee
+ */
 package Game_Board;
 
 public class LineBoard extends Board {

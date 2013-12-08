@@ -1,3 +1,7 @@
+/**
+ *
+ * @author teddy.delavallee
+ */
 package Game_Board;
 
 //import java.util.ArrayList;
@@ -20,6 +24,12 @@ public class Board {
 
 	public void setNbBox(int pNbBox) {
 		this.nbBox=pNbBox;
+	}
+        
+        @Override
+	public String toString() 
+	{
+		return "\n"+"Nombre de cases : "+this.nbBox;
 	}
 
 //	public void addGamePiece(Game_Piece pPiece){
