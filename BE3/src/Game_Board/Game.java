@@ -11,11 +11,11 @@ public class Game {
 	
       
 
-        public Game (){
-            this.myPlayers={};
-            this.myBoard={};
+        public Game (ArrayList<Player> p,Board b, String s){
+            this.myPlayers=p;
+            this.myBoard=b;
             this.isAlive=true;
-            this.myRules="soyez_gentils" ;
+            this.myRules=s;
             
         }
         
