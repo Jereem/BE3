@@ -6,6 +6,7 @@
 
 package Main;
 import Game_Board.*;
+import java.util.ArrayList;
 
 /**
  *
@@ -13,7 +14,11 @@ import Game_Board.*;
  */
 public class Main {
     
-    Game g=new Game;
+    ArrayList<Player> p;
+    String s="coucou";
+    Board b;
+    Game g = new Game(p,b,s);
+    
     
     
 }
