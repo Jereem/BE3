@@ -6,7 +6,7 @@ public class Dice {
         private int val_min;
         private int val_max;
         
-        private Dice (int val_min,int val_max) {
+        public Dice (int val_min,int val_max) {
             Random r = new Random();
             //int valeur = valeurMin + r.nextInt(valeurMax - valeurMin)
             int valeur = val_min + r.nextInt(val_max-val_min);

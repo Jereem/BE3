@@ -5,7 +5,7 @@
  */
 
 package Main;
-import Game_Board.*;
+//import Game_Board.*;
 import java.util.ArrayList;
 
 /**
@@ -14,11 +14,45 @@ import java.util.ArrayList;
  */
 public class Main {
     
-    ArrayList<Player> p;
-    String s="coucou";
-    Board b;
+    public static void main(String[] args) throws InterruptedException {
+    
+    // Demander la partie jouée (échecs ou snake and ladders)
+    System.out.println("Choose your game : ");
+    System.out.println("\t 1 - Chekkers");
+    System.out.println("\t 2 - Snake and ladders");
+    
+    
+    
+    // ------- SNAKE AND LADDERS --------
+    // Demander le nombre de joueur
+    
+    
+    
+    // Demander le pseudo et la couleur de chacun des joueurs //loop sur le nombre de joueurs
+    
+    
+    
+    // Creer la partie avec la liste des joueurs créés et le plateau adéquat
+    /*
+    ArrayList<Player> p; //liste des joueurs
+    String s="coucou"; //règles du jeu
+    Board b; //plateau utilisé
     Game g = new Game(p,b,s);
+    Dice deSixFaces = new Dice(1,6); // dé utilisé pour la partie
+    */
+    
+    //début du tour
+    
+        //lancé de dés
+    
+            //case courante += dés puis += case.action
+    
+            //Si sur dernière case --> fin de la partie
+    
+            //Si nouveauNumeroCase>taillePlateau --> nouvelle case = taillePlateau - (nouveauNumeroCase - taille plateau)
+                //puis += case.action
     
     
     
+    }
 }
