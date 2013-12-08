@@ -6,9 +6,11 @@ package Game_Board;
 
 public class LineBox {
 	private int index;
+        private int mouvement;
         
 	public LineBox(){
-            this.index = 0; 
+            this.index = 0;
+            this.mouvement = 0;
         }
 
 	/**
@@ -22,4 +24,12 @@ public class LineBox {
 	public void setIndex(int pIndex) {
 		this.index = pIndex;
 	}
+
+    public int getMouvement() {
+        return this.mouvement;
+    }
+
+    public void setMouvement(int pMouvement) {
+        this.mouvement = pMouvement;
+    }
 }
