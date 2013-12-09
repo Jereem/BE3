@@ -6,7 +6,10 @@
 
 package Main;
 import Game_Board.*;
-import java.util.ArrayList;
+import java.util.*;
+        
+
+
 
 /**
  *
@@ -17,9 +20,12 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
     
     // Demander la partie jouée (échecs ou snake and ladders)
+    Scanner sc = new Scanner(System.in);
     System.out.println("Choose your game : ");
     System.out.println("\t 1 - Chekkers");
     System.out.println("\t 2 - Snake and ladders");
+    int str = sc.nextInt();
+    System.out.println("You enter: " + str);
     
     
     
