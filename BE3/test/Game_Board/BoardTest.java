@@ -74,11 +74,11 @@ public class BoardTest {
     public void testToString() {
         System.out.println("toString");
         Board instance = new Board();
-        String expResult = "";
+        String expResult = "" + "Nombre de cases : " + instance.getNbBox();
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
