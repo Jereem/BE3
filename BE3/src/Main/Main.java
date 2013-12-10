@@ -21,14 +21,27 @@ public class Main {
     
     // Demander la partie jouée (échecs ou snake and ladders)
     Scanner sc = new Scanner(System.in);
-    System.out.println("Choose your game : ");
-    System.out.println("\t 1 - Chekkers");
+    System.out.println("Welcome to GPhy Game !");
+    System.out.println("List of games : ");
+    System.out.println("\t 1 - Checkers");
     System.out.println("\t 2 - Snake and ladders");
-    int str = sc.nextInt();
-    System.out.println("You enter: " + str);
-    
-    
-    
+    System.out.println("\t 0 - Exit to GPhy Game");
+
+    int str;
+        str = sc.nextInt();
+            
+    System.out.println("You enter : " + str);
+    switch (str){
+    case 0: 
+        System.out.println("GAME OVER"); 
+        System.exit(1);
+         break ;
+    case 1:
+        System.out.println("CHECKERS"); 
+    break;
+    case 2:
+        System.out.println("SNAKE AND LADDERS");
+        
     // ------- SNAKE AND LADDERS --------
     // Demander le nombre de joueur
     
@@ -57,6 +70,19 @@ public class Main {
     
             //Si nouveauNumeroCase>taillePlateau --> nouvelle case = taillePlateau - (nouveauNumeroCase - taille plateau)
                 //puis += case.action
+    
+        
+        
+        
+        
+    break;
+    default:
+        System.out.println("ERROR please try again"); sc.nextInt();
+
+    }
+
+
+    
     
     
     
