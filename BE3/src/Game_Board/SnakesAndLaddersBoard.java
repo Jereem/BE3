@@ -3,6 +3,7 @@ package Game_Board;
 public class SnakesAndLaddersBoard extends LineBoard {
     
     public SnakesAndLaddersBoard() {
+        super();
         this.nbBox=31;
         for (int i = 0; i < this.path.length; i++) {
             this.path[i].setIndex(i);

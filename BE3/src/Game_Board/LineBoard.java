@@ -10,6 +10,7 @@ public class LineBoard extends Board {
     
     public LineBoard() {
         super();
+        this.path = new LineBox[nbBox];
         for (int i = 0; i < this.path.length; i++) {
             this.path[i].setIndex(i);
         }
