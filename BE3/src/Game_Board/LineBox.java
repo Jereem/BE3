@@ -4,7 +4,7 @@
  */
 package Game_Board;
 
-public class LineBox {
+public class LineBox extends Box{
 	private int index;
         private int mouvement;
         
@@ -31,5 +31,12 @@ public class LineBox {
 
     public void setMouvement(int pMouvement) {
         this.mouvement = pMouvement;
+    }
+    
+    @Override
+    public void putBox() {
+        System.out.print("Box number : ");
+        System.out.println(this.index);
+        super.putBox();
     }
 }

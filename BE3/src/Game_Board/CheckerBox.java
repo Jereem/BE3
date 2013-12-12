@@ -6,7 +6,7 @@ package Game_Board;
 
 import java.awt.Color;
 
-public class CheckerBox {
+public class CheckerBox extends Box{
 	private int line;
 	private int column;
         private Color couleur;

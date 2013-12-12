@@ -6,6 +6,7 @@
 
 package Game_Board;
 
+import java.awt.Color;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,9 +18,9 @@ import static org.junit.Assert.*;
  *
  * @author teddy.delavallee
  */
-public class BoardTest {
+public class LineBoardTest {
     
-    public BoardTest() {
+    public LineBoardTest() {
     }
     
     @BeforeClass
@@ -39,39 +40,32 @@ public class BoardTest {
     }
 
     /**
-     * Test of getNbBox method, of class Board.
+     * Test of getPath method, of class LineBoard.
      */
     @Test
-    public void testGetNbBox() {
-        System.out.println("getNbBox");
-        Board instance = new Board();
-        int expResult = 0;
-        int result = instance.getNbBox();
-        assertEquals(expResult, result);
+    public void testGetPath() {
+        System.out.println("getPath");
+        LineBoard instance = new LineBoard();
+        LineBox[] expResult = null;
+        LineBox[] result = instance.getPath();
+        assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setNbBox method, of class Board.
-     */
-    @Test
-    public void testSetNbBox() {
-        System.out.println("setNbBox");
-        int pNbBox = 0;
-        Board instance = new Board();
-        instance.setNbBox(pNbBox);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of putBoard method, of class Board.
+     * Test of putBoard method, of class LineBoard.
      */
     @Test
     public void testPutBoard() {
         System.out.println("putBoard");
-        Board instance = new Board();
+        LineBox instance1 = new LineBox();
+        Board uB = null;
+        Game_Piece pPiece = new Game_Piece(instance1, true , Color.BLUE , "Ted", uB);
+        SnakesAndLaddersBoard instance = new SnakesAndLaddersBoard();
+        instance.putBoard();
+        int n = 5;
+        instance.getPath(n).addGamePiece(pPiece);
         instance.putBoard();
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");

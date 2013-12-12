@@ -49,4 +49,10 @@ public class Game_Piece {
 	public void setName(String aName) {
 		this.name = aName;
 	}
+        
+        @Override
+	public String toString() 
+	{
+		return "\n"+"Color : " +this.couleur + " Name : "+this.name;
+	}
 }

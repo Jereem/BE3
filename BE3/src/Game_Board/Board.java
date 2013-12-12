@@ -4,11 +4,8 @@
  */
 package Game_Board;
 
-//import java.util.ArrayList;
-
 public class Board {
 	protected int nbBox;
-//	protected ArrayList<Game_Piece> gamePieces = new ArrayList<>();
         
         public Board() {
             this.nbBox=0;
@@ -26,23 +23,11 @@ public class Board {
 		this.nbBox=pNbBox;
 	}
         
-        @Override
-	public String toString() 
+	public void putBoard() 
 	{
-		return "\n"+"Nombre de cases : "+this.nbBox;
+            System.out.print("Board of ");
+            System.out.print(this.nbBox);
+            System.out.println(" Box");
 	}
 
-//	public void addGamePiece(Game_Piece pPiece){
-//            gamePieces.add(pPiece);
-//        }
-        
-//        public void delGamePiece(Game_Piece pPiece){
-//            if(gamePieces.indexOf(pPiece) != -1){
-//                gamePieces.remove(gamePieces.indexOf(pPiece));
-//            }
-//        }
-            
-//        public void delGamePiece(int nbPiece){
-//                gamePieces.remove(nbPiece);
-//        }
 }
