@@ -50,9 +50,10 @@ public class Game_Piece {
 		this.name = aName;
 	}
         
+        // fait par teddy pour afficher le pion present dans une case
         @Override
 	public String toString() 
 	{
-		return "\n"+"Color : " +this.couleur + " Name : "+this.name;
+		return "Color : " +this.couleur + " Name : "+this.name;
 	}
 }

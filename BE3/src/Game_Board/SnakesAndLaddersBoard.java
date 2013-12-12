@@ -6,6 +6,7 @@ public class SnakesAndLaddersBoard extends LineBoard {
         this.nbBox = 31;
         this.path = new LineBox[nbBox];
         for (int i = 0; i < this.path.length; i++) {
+            this.path[i] = new LineBox();
             this.path[i].setIndex(i);
             if (i == 6 || i == 18) {
                 this.path[i].setMouvement(6);

@@ -35,6 +35,7 @@ public class LineBox extends Box{
     
     @Override
     public void putBox() {
+        System.out.println("");
         System.out.print("Box number : ");
         System.out.println(this.index);
         super.putBox();

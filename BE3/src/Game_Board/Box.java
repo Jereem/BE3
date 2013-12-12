@@ -47,7 +47,7 @@ public class Box {
 
     public void putBox() {
         System.out.print("Is busy : ");
-        System.out.println(this.isBusy);
+        System.out.print(this.isBusy);
         if (this.isBusy == true) {
             for (Game_Piece elem : gamePieces) {
                 System.out.print("Game piece : ");

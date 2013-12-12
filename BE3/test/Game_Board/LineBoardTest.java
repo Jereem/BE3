@@ -63,7 +63,6 @@ public class LineBoardTest {
         Board uB = null;
         Game_Piece pPiece = new Game_Piece(instance1, true , Color.BLUE , "Ted", uB);
         SnakesAndLaddersBoard instance = new SnakesAndLaddersBoard();
-        instance.putBoard();
         int n = 5;
         instance.getPath(n).addGamePiece(pPiece);
         instance.putBoard();
