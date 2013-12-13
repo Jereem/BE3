@@ -1,14 +1,13 @@
 package Game_Board;
 
 import java.util.ArrayList;
-import java.util.Scanner;
  
 /**
  *
  * @author BE3 Group
  * 
  */
-public class Game {
+public abstract class Game {
 	protected ArrayList<Player> myPlayers = new ArrayList<>();
 	protected String myRules;
         protected boolean isAlive;        
