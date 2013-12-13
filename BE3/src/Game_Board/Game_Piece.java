@@ -17,8 +17,8 @@ public class Game_Piece {
     public Game_Piece() {
         this.coordinates = null;
         this.isAlive = true;
-        this.couleur = null;
-        this.name = null;
+        this.name = new Player();
+        this.couleur = this.name.getColor();
         this.unnamed_Board = null;
     }
     
@@ -33,8 +33,8 @@ public class Game_Piece {
     public Game_Piece(Box b, boolean aalive, Color c, Player s, Board uB) {
         this.coordinates = b;
         this.isAlive = aalive;
-        this.couleur = c;
         this.name = s;
+        this.couleur = this.name.getColor();
         this.unnamed_Board = uB;
     }
 

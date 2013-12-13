@@ -1,6 +1,7 @@
 package Game_Board;
 
 import java.util.ArrayList;
+import java.util.Scanner;
  
 /**
  *
@@ -12,6 +13,21 @@ public class Game {
 	protected Board myBoard;
         protected boolean isAlive;
 
+        public Game(){
+            this.myPlayers = new ArrayList<>();
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Players number :");
+            int str = sc.nextInt();
+            System.out.println("Players number : " + str);
+            for (int i = 0; i < str; i++) {
+                Player pPlayer = new Player();
+                myPlayers.add(pPlayer);
+            }
+            this.myBoard= new Board();
+            this.isAlive=true;
+            this.myRules= "No Rules";
+        }
+        
     /**
      *
      * @param p
@@ -23,7 +39,6 @@ public class Game {
             this.myBoard=b;
             this.isAlive=true;
             this.myRules=s;
-            
         }
 
     /**
