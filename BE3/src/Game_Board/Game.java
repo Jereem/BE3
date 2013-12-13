@@ -32,7 +32,8 @@ public abstract class Game {
         for (Player elem : myPlayers) {
                 System.out.println("Players : ");
                 System.out.println(elem.toString());
+              }  
                 System.out.println("Board : ");
-            }
+            
     }
 }
