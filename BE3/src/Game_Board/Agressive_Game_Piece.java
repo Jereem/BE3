@@ -8,17 +8,10 @@ import java.awt.Color;
  */
 public class Agressive_Game_Piece extends Mobile_Game_Piece {
 
-    /**
-     *
-     * @param b
-     * @param aalive
-     * @param c
-     * @param s
-     * @param uB
-     */
-    public Agressive_Game_Piece(Box b, boolean aalive , Color c, String s, Board uB){
-            super(b,aalive,c,s,uB);
-        }
+    public Agressive_Game_Piece(Player pName) {
+        super(pName);
+    }
+
 
     /**
      *
@@ -27,19 +20,25 @@ public class Agressive_Game_Piece extends Mobile_Game_Piece {
      * @param aBox_b
      */
     public void attack(Game_Piece p1, Game_Piece p2, Box aBox_b) {
-                p1.setCoordinates(aBox_b);
-                p2.setCoordinates(null);
-                p2.setIsAlive();
-	}
+/// CONDITION 
+                if (confirmAttack( p1, p2)) {
+                    p1.setCoordinates(p2.coordinates);
+                    p2.setCoordinates(null);
+                    p2.setIsAlive();
+        }
+                else { 
+                    System.out.println("Error this piece not can attack at this coordinates");
+                }
+    }
 
     /**
      *
-     * @param p1
-     * @param p2
-     * @return
+     * @param p1 my piece
+     * @param p2 attacked piece
+     * @return true if enemy piece and can attack piece
      */
     public boolean confirmAttack(Game_Piece p1, Game_Piece p2) {
-		throw new UnsupportedOperationException();
+        return p1.couleur != p2.couleur;
 	}
         
 }

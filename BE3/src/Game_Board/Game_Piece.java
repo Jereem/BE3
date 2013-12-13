@@ -9,9 +9,9 @@ import java.awt.Color;
  */
 public class Game_Piece {
 
-    private Box coordinates;
+    Box coordinates;
     private boolean isAlive;
-    private Color couleur;
+    Color couleur;
     private Player name;
     private Board unnamed_Board;
 
