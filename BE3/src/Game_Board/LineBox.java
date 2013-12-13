@@ -8,33 +8,35 @@ package Game_Board;
  *
  * @author teddy.delavallee
  */
-public class LineBox extends Box{
-	private int index;
-        private int mouvement;
+public class LineBox extends Box {
+
+    private int index;
+    private int mouvement;
 
     /**
      *
      */
-    public LineBox(){
-            this.index = 0;
-            this.mouvement = 0;
-        }
+    public LineBox() {
+        this.index = 0;
+        this.mouvement = 0;
+    }
 
-	/**
-	 * Donne le numéro de la case      
-         * @return 
-	 */
-	public int getIndex() {
-		return this.index;
-	}
+    /**
+     * Donne le numéro de la case
+     *
+     * @return
+     */
+    public int getIndex() {
+        return this.index;
+    }
 
     /**
      *
      * @param pIndex
      */
     public void setIndex(int pIndex) {
-		this.index = pIndex;
-	}
+        this.index = pIndex;
+    }
 
     /**
      *
@@ -51,7 +53,7 @@ public class LineBox extends Box{
     public void setMouvement(int pMouvement) {
         this.mouvement = pMouvement;
     }
-    
+
     /**
      *
      */

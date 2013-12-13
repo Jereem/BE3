@@ -10,65 +10,66 @@ import java.awt.Color;
  *
  * @author teddy.delavallee
  */
-public class CheckerBox extends Box{
-	private int line;
-	private int column;
-        private Color couleur;
+public class CheckerBox extends Box {
+
+    private int line;
+    private int column;
+    private Color couleur;
 
     /**
      *
      */
     public CheckerBox() {
-		throw new UnsupportedOperationException();
-	}
+        throw new UnsupportedOperationException();
+    }
 
     /**
      *
      * @return
      */
     public int getLine() {
-		return this.line;
-	}
+        return this.line;
+    }
 
     /**
      *
      * @return
      */
     public int getColumn() {
-		return this.column;
-	}
+        return this.column;
+    }
 
     /**
      *
      * @param aPLine
      */
     public void setLine(int aPLine) {
-		this.line = aPLine;
-	}
+        this.line = aPLine;
+    }
 
     /**
      *
      * @param aPColumn
      */
     public void setColumn(int aPColumn) {
-		this.column = aPColumn;
-	}
+        this.column = aPColumn;
+    }
 
     /**
      *
      * @return
      */
     public Color getCouleur() {
-		return this.couleur;
-	}
+        return this.couleur;
+    }
 
     /**
      *
      * @param aPCouleur
      */
     public void setCouleur(Color aPCouleur) {
-		this.couleur = aPCouleur;
-	}
+        this.couleur = aPCouleur;
+    }
 
     /**
      *

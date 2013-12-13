@@ -14,7 +14,7 @@ public class LineBoard extends Board {
      *
      */
     protected LineBox[] path = new LineBox[nbBox];
-    
+
     /**
      *
      */
@@ -26,24 +26,24 @@ public class LineBoard extends Board {
             this.path[i].setIndex(i);
         }
     }
-    
+
     /**
      *
      * @return
      */
-    public LineBox[] getPath(){
+    public LineBox[] getPath() {
         return this.path;
     }
-    
+
     /**
      *
      * @param n
      * @return
      */
-    public LineBox getPath(int n){
+    public LineBox getPath(int n) {
         return this.path[n];
     }
-    
+
     /**
      *
      * @param pNbBox
@@ -54,7 +54,7 @@ public class LineBoard extends Board {
             this.path[i].setIndex(i);
         }
     }
-    
+
     /**
      *
      */

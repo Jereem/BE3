@@ -19,41 +19,41 @@ public class Board {
      * Constructeur par default d'un plateau
      */
     public Board() {
-            this.nbBox=0;
-	}
+        this.nbBox = 0;
+    }
 
     /**
      * Constructeur d'un plateau
+     *
      * @param pNbBox
      */
     public Board(int pNbBox) {
-		this.nbBox=pNbBox;
-	}
+        this.nbBox = pNbBox;
+    }
 
     /**
-     * 
+     *
      * @return
      */
     public int getNbBox() {
-		return this.nbBox;
-	}
+        return this.nbBox;
+    }
 
     /**
      *
      * @param pNbBox
      */
     public void setNbBox(int pNbBox) {
-		this.nbBox=pNbBox;
-	}
+        this.nbBox = pNbBox;
+    }
 
     /**
      *
      */
-    public void putBoard() 
-	{
-            System.out.print("Board of ");
-            System.out.print(this.nbBox);
-            System.out.println(" Box");
-	}
+    public void putBoard() {
+        System.out.print("Board of ");
+        System.out.print(this.nbBox);
+        System.out.println(" Box");
+    }
 
 }

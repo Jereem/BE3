@@ -45,7 +45,7 @@ public class CheckerBoard extends Board {
     public String toString() {
         return super.toString() + "\n" + "Hauteur : " + this.height + "\n" + "Largeur : " + this.width;
     }
-    
+
     /**
      *
      */
@@ -54,7 +54,7 @@ public class CheckerBoard extends Board {
         super.putBoard();
         for (int i = 0; i < this.height; i++) {
             for (int j = 0; j < this.width; j++) {
-            this.checker[i][j].putBox();
+                this.checker[i][j].putBox();
             }
         }
     }

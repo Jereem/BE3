@@ -1,6 +1,5 @@
 package Game_Board;
 
-
 import java.awt.Color;
 
 /**
@@ -8,12 +7,21 @@ import java.awt.Color;
  * @author BE3 Group
  */
 public class Game_Piece {
-	private Box coordinates;
-	private boolean isAlive;
-	private Color couleur;
-	private String name;
-	private Board unnamed_Board;
 
+    private Box coordinates;
+    private boolean isAlive;
+    private Color couleur;
+    private Player name;
+    private Board unnamed_Board;
+
+    public Game_Piece() {
+        this.coordinates = null;
+        this.isAlive = true;
+        this.couleur = null;
+        this.name = null;
+        this.unnamed_Board = null;
+    }
+    
     /**
      *
      * @param b
@@ -22,78 +30,75 @@ public class Game_Piece {
      * @param s
      * @param uB
      */
-    public Game_Piece(Box b, boolean aalive , Color c, String s, Board uB) {
-		this.coordinates = b;
-                this.isAlive = aalive;
-                this.couleur = c;
-                this.name = s;
-                this.unnamed_Board = uB;
-	}
+    public Game_Piece(Box b, boolean aalive, Color c, Player s, Board uB) {
+        this.coordinates = b;
+        this.isAlive = aalive;
+        this.couleur = c;
+        this.name = s;
+        this.unnamed_Board = uB;
+    }
 
     /**
      *
      * @return
      */
     public Box getCoordinates() {
-		return this.coordinates;
-	}
+        return this.coordinates;
+    }
 
     /**
      *
      * @param aCoordinates
      */
     public void setCoordinates(Box aCoordinates) {
-		this.coordinates = aCoordinates;
-	}
+        this.coordinates = aCoordinates;
+    }
 
 	//public boolean confirmCoordinates(Object aBox_c) {
-	//	throw new UnsupportedOperationException();
-	//}
-
+    //	throw new UnsupportedOperationException();
+    //}
     /**
      *
      */
-    
-	public void setIsAlive() {
-		this.isAlive = !(this.isAlive);
-	}
+    public void setIsAlive() {
+        this.isAlive = !(this.isAlive);
+    }
 
     /**
      *
      * @return
      */
     public Color getCouleur() {
-		return this.couleur;
-	}
+        return this.couleur;
+    }
 
     /**
      *
      * @param aCouleur
      */
     public void setCouleur(Color aCouleur) {
-		this.couleur = aCouleur;
-	}
+        this.couleur = aCouleur;
+    }
 
     /**
      *
      * @return
      */
-    public String getName() {
-		return this.name;
-	}
+    public Player getName() {
+        return this.name;
+    }
 
     /**
      *
      * @param aName
      */
-    public void setName(String aName) {
-		this.name = aName;
-	}
-        
-        // fait par teddy pour afficher le pion present dans une case
-        @Override
-	public String toString() 
-	{
-		return "Color : " +this.couleur + " Name : "+this.name;
-	}
+    public void setName(Player aName) {
+        this.name = aName;
+    }
+
+    // fait par teddy pour afficher le pion present dans une case
+    @Override
+    public String toString() {
+        return "Color : " + this.couleur + " Name : " + this.name;
+    }
 }

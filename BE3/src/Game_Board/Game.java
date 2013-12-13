@@ -4,13 +4,13 @@ import java.util.ArrayList;
  
 /**
  *
- * @author teddy.delavallee
+ * @author BE3 Group
  */
 public class Game {
-	private ArrayList<Player> myPlayers;
-	private String myRules;
-	private Board myBoard;
-        private boolean isAlive;
+	protected ArrayList<Player> myPlayers = new ArrayList<>();
+	protected String myRules;
+	protected Board myBoard;
+        protected boolean isAlive;
 
     /**
      *

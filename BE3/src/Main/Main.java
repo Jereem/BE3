@@ -23,9 +23,10 @@ public class Main {
     Scanner sc = new Scanner(System.in);
     System.out.println("Welcome to GPhy Game !");
     System.out.println("List of games : ");
+    System.out.println("\t 0 - Exit to GPhy Game");
     System.out.println("\t 1 - Checkers");
     System.out.println("\t 2 - Snake and ladders");
-    System.out.println("\t 0 - Exit to GPhy Game");
+    
 
     int str;
         str = sc.nextInt();

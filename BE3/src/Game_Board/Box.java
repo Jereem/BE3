@@ -59,7 +59,7 @@ public class Box {
         if (gamePieces.indexOf(pPiece) != -1) {
             gamePieces.remove(gamePieces.indexOf(pPiece));
         }
-        if (gamePieces.isEmpty()){
+        if (gamePieces.isEmpty()) {
             this.isBusy = false;
         }
     }
@@ -70,7 +70,7 @@ public class Box {
      */
     public void delGamePiece(int nbPiece) {
         gamePieces.remove(nbPiece);
-        if (gamePieces.isEmpty()){
+        if (gamePieces.isEmpty()) {
             this.isBusy = false;
         }
     }
