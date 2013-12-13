@@ -1,29 +1,55 @@
 /**
  *
- * @author teddy.delavallee
+ * @author BE3 Group
  */
 package Game_Board;
 
+/**
+ *
+ * @author Teddy Delavallee
+ */
 public class Board {
-	protected int nbBox;
-        
-        public Board() {
+
+    /**
+     * Nombre de case du plateau
+     */
+    protected int nbBox;
+
+    /**
+     * Constructeur par default d'un plateau
+     */
+    public Board() {
             this.nbBox=0;
 	}
-        
-	public Board(int pNbBox) {
+
+    /**
+     * Constructeur d'un plateau
+     * @param pNbBox
+     */
+    public Board(int pNbBox) {
 		this.nbBox=pNbBox;
 	}
 
-	public int getNbBox() {
+    /**
+     * 
+     * @return
+     */
+    public int getNbBox() {
 		return this.nbBox;
 	}
 
-	public void setNbBox(int pNbBox) {
+    /**
+     *
+     * @param pNbBox
+     */
+    public void setNbBox(int pNbBox) {
 		this.nbBox=pNbBox;
 	}
-        
-	public void putBoard() 
+
+    /**
+     *
+     */
+    public void putBoard() 
 	{
             System.out.print("Board of ");
             System.out.print(this.nbBox);

@@ -1,14 +1,21 @@
 /**
  *
- * @author teddy.delavallee
+ * @author BE3 Group
  */
 package Game_Board;
 
+/**
+ *
+ * @author teddy.delavallee
+ */
 public class LineBox extends Box{
 	private int index;
         private int mouvement;
-        
-	public LineBox(){
+
+    /**
+     *
+     */
+    public LineBox(){
             this.index = 0;
             this.mouvement = 0;
         }
@@ -21,18 +28,33 @@ public class LineBox extends Box{
 		return this.index;
 	}
 
-	public void setIndex(int pIndex) {
+    /**
+     *
+     * @param pIndex
+     */
+    public void setIndex(int pIndex) {
 		this.index = pIndex;
 	}
 
+    /**
+     *
+     * @return
+     */
     public int getMouvement() {
         return this.mouvement;
     }
 
+    /**
+     *
+     * @param pMouvement
+     */
     public void setMouvement(int pMouvement) {
         this.mouvement = pMouvement;
     }
     
+    /**
+     *
+     */
     @Override
     public void putBox() {
         System.out.println("");

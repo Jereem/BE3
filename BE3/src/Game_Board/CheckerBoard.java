@@ -1,18 +1,26 @@
 /**
  *
- * @author teddy.delavallee
+ * @author BE3 Group
  */
 package Game_Board;
 
 import java.awt.Color;
 import static java.lang.Math.sqrt;
 
+/**
+ *
+ * @author teddy.delavallee
+ */
 public class CheckerBoard extends Board {
 
     private int height;
     private int width;
     private CheckerBox[][] checker = new CheckerBox[height][width];
 
+    /**
+     *
+     * @param pNbBox
+     */
     public CheckerBoard(int pNbBox) {
         super();
         this.height = (int) sqrt(nbBox);
@@ -38,6 +46,9 @@ public class CheckerBoard extends Board {
         return super.toString() + "\n" + "Hauteur : " + this.height + "\n" + "Largeur : " + this.width;
     }
     
+    /**
+     *
+     */
     @Override
     public void putBoard() {
         super.putBoard();

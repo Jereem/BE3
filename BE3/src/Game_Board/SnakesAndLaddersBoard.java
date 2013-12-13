@@ -1,7 +1,14 @@
 package Game_Board;
 
+/**
+ *
+ * @author BE3 Group
+ */
 public class SnakesAndLaddersBoard extends LineBoard {
 
+    /**
+     *
+     */
     public SnakesAndLaddersBoard() {
         this.nbBox = 31;
         this.path = new LineBox[nbBox];

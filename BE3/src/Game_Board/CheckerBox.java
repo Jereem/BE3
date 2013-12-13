@@ -1,45 +1,79 @@
 /**
  *
- * @author teddy.delavallee
+ * @author BE3 Group
  */
 package Game_Board;
 
 import java.awt.Color;
 
+/**
+ *
+ * @author teddy.delavallee
+ */
 public class CheckerBox extends Box{
 	private int line;
 	private int column;
         private Color couleur;
 
-	public CheckerBox() {
+    /**
+     *
+     */
+    public CheckerBox() {
 		throw new UnsupportedOperationException();
 	}
 
-	public int getLine() {
+    /**
+     *
+     * @return
+     */
+    public int getLine() {
 		return this.line;
 	}
 
-	public int getColumn() {
+    /**
+     *
+     * @return
+     */
+    public int getColumn() {
 		return this.column;
 	}
 
-	public void setLine(int aPLine) {
+    /**
+     *
+     * @param aPLine
+     */
+    public void setLine(int aPLine) {
 		this.line = aPLine;
 	}
 
-	public void setColumn(int aPColumn) {
+    /**
+     *
+     * @param aPColumn
+     */
+    public void setColumn(int aPColumn) {
 		this.column = aPColumn;
 	}
-        
-        public Color getCouleur() {
+
+    /**
+     *
+     * @return
+     */
+    public Color getCouleur() {
 		return this.couleur;
 	}
 
-	public void setCouleur(Color aPCouleur) {
+    /**
+     *
+     * @param aPCouleur
+     */
+    public void setCouleur(Color aPCouleur) {
 		this.couleur = aPCouleur;
 	}
-        
-        @Override
+
+    /**
+     *
+     */
+    @Override
     public void putBox() {
         System.out.println("");
         System.out.print("Box number : ");

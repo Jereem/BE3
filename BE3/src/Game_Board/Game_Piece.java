@@ -3,6 +3,10 @@ package Game_Board;
 
 import java.awt.Color;
 
+/**
+ *
+ * @author BE3 Group
+ */
 public class Game_Piece {
 	private Box coordinates;
 	private boolean isAlive;
@@ -10,7 +14,15 @@ public class Game_Piece {
 	private String name;
 	private Board unnamed_Board;
 
-	public Game_Piece(Box b, boolean aalive , Color c, String s, Board uB) {
+    /**
+     *
+     * @param b
+     * @param aalive
+     * @param c
+     * @param s
+     * @param uB
+     */
+    public Game_Piece(Box b, boolean aalive , Color c, String s, Board uB) {
 		this.coordinates = b;
                 this.isAlive = aalive;
                 this.couleur = c;
@@ -18,11 +30,19 @@ public class Game_Piece {
                 this.unnamed_Board = uB;
 	}
 
-	public Box getCoordinates() {
+    /**
+     *
+     * @return
+     */
+    public Box getCoordinates() {
 		return this.coordinates;
 	}
 
-	public void setCoordinates(Box aCoordinates) {
+    /**
+     *
+     * @param aCoordinates
+     */
+    public void setCoordinates(Box aCoordinates) {
 		this.coordinates = aCoordinates;
 	}
 
@@ -30,23 +50,43 @@ public class Game_Piece {
 	//	throw new UnsupportedOperationException();
 	//}
 
+    /**
+     *
+     */
+    
 	public void setIsAlive() {
 		this.isAlive = !(this.isAlive);
 	}
 
-	public Color getCouleur() {
+    /**
+     *
+     * @return
+     */
+    public Color getCouleur() {
 		return this.couleur;
 	}
 
-	public void setCouleur(Color aCouleur) {
+    /**
+     *
+     * @param aCouleur
+     */
+    public void setCouleur(Color aCouleur) {
 		this.couleur = aCouleur;
 	}
 
-	public String getName() {
+    /**
+     *
+     * @return
+     */
+    public String getName() {
 		return this.name;
 	}
 
-	public void setName(String aName) {
+    /**
+     *
+     * @param aName
+     */
+    public void setName(String aName) {
 		this.name = aName;
 	}
         
