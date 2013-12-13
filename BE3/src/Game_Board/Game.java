@@ -16,8 +16,12 @@ public class Game {
         public Game(){
             this.myPlayers = new ArrayList<>();
             Scanner sc = new Scanner(System.in);
-            System.out.println("Players number :");
+            System.out.println("Players number (max 8):");
             int str = sc.nextInt();
+            if (str < 0 || str >8){
+                System.out.println("PLAYERS NUMBER ERROR, please try again");
+                sc.nextInt();
+            }
             System.out.println("Players number : " + str);
             for (int i = 0; i < str; i++) {
                 Player pPlayer = new Player();
@@ -72,4 +76,13 @@ public class Game {
     public void setBoard(Board aBoard) {
 		this.myBoard = aBoard;
 	}
+    
+    public void putGame(){
+        for (Player elem : myPlayers) {
+                System.out.println("Players : ");
+                System.out.println(elem.toString());
+                System.out.println("Board : ");
+                myBoard.putBoard();
+            }
+    }
 }

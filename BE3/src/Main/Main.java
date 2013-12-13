@@ -43,16 +43,8 @@ public class Main {
     case 2:
         System.out.println("SNAKE AND LADDERS");
         
-    // ------- SNAKE AND LADDERS --------
-    // Demander le nombre de joueur
-    
-    
-    
-    // Demander le pseudo et la couleur de chacun des joueurs //loop sur le nombre de joueurs
-    
-    
-    
-    // Creer la partie avec la liste des joueurs créés et le plateau adéquat
+    SnakesAndLaddersGame myGame = new SnakesAndLaddersGame();
+    myGame.putGame();
     /*
     ArrayList<Player> p; //liste des joueurs
     String s="coucou"; //règles du jeu

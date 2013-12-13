@@ -119,6 +119,11 @@ public class Player {
     }
     
     public void putPlayer(){
-        System.out.println();
+        System.out.println("Nickname : " + this.myName + " Color : " + this.myColor + " Win : " + this.winCounter);
+    }
+    
+    @Override
+    public String toString(){
+        return "Nickname : " + this.myName + " Color : " + this.myColor + " Win : " + this.winCounter;
     }
 }
