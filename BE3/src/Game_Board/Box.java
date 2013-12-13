@@ -80,7 +80,7 @@ public class Box {
      */
     public void putBox() {
         System.out.print("Is busy : ");
-        System.out.print(this.isBusy);
+        System.out.println(this.isBusy);
         if (this.isBusy == true) {
             for (Game_Piece elem : gamePieces) {
                 System.out.print("Game piece : ");
