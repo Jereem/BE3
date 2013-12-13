@@ -47,7 +47,7 @@ public class Mobile_Game_Piece extends Game_Piece {
      * @param s
      * @param uB
      */
-    public Mobile_Game_Piece(Box b, boolean aalive , Color c, String s, Board uB) {
-		super(b,aalive,c,s,uB);
-	}
+//    public Mobile_Game_Piece(Box b, boolean aalive , Color c, String s, Board uB) {
+//		super(b,aalive,c,s,uB);
+//	}
 }

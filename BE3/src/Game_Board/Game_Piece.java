@@ -2,6 +2,7 @@ package Game_Board;
 
 import java.awt.Color;
 
+
 /**
  *
  * @author BE3 Group
@@ -99,6 +100,6 @@ public class Game_Piece {
     // fait par teddy pour afficher le pion present dans une case
     @Override
     public String toString() {
-        return "Color : " + this.couleur + " Name : " + this.name;
+        return "Color : " + this.couleur.toString() + " Name : " + this.name;
     }
 }

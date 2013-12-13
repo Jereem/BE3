@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author teddy.delavallee
+ * @author BE3 Group
  */
 public class SnakesAndLaddersGame extends Game {
     private SnakesAndLaddersBoard myBoard;
@@ -33,6 +33,16 @@ public class SnakesAndLaddersGame extends Game {
         }
         this.isAlive = true;
         this.myRules = "Snakes and ladders Rules";
+    }
+    
+    public void play(){
+        //loop
+        // prend un joueur
+        // lance le dès
+        // avance le pion sur la case
+        // prend l'echelle une fois le cas echeant
+        // affiche plateau
+        // verifie si gagnant
     }
     
     @Override
