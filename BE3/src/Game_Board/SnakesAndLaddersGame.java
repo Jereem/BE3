@@ -37,30 +37,30 @@ public class SnakesAndLaddersGame extends Game {
     public void play(){
         Dice monDe = new Dice(1,6);
         //loop
-        boolean isPlaying = true;
+        boolean isPlaying = true; //bouclera tant que personne n'aura gagné --> is playing = partie en cours
         while (isPlaying = true){
+                // on prend un joueur
             for (Player elem : myPlayers) {
-                // prend un joueur
                 // lance le dès
                 monDe.setValue();
                 // avance le pion sur la case
                 int index = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getIndex();
-                //nouvelle valeur de la case : monDe.value + index;
+                // nouvelle valeur de la case : monDe.value + index;
                 int new_case = monDe.getValue()+index;
-                //on déplace le pion
+                // on déplace le pion
                 ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinates(myBoard.getPath(new_case));
-                //on récupère sa nouvelle case
+                // on récupère sa nouvelle case
                 index = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getIndex();
-                //on récupère le mouvement associé
+                // on récupère le mouvement associé
                 int mouvement = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getMouvement();
-                //on calcul la valeur de la nouvelle case + mouvement
+                // on calcul la valeur de la nouvelle case + mouvement
                 new_case = index + mouvement;
-                //on re déplace le pion
+                // on re déplace le pion
                 ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinates(myBoard.getPath(new_case));
-                
-                
-                
-                // prend l'echelle une fois le cas echeant
+                if(new_case>=31){
+                isPlaying = false;
+                elem.setWinning_counter();
+                }
                 // affiche plateau
                 this.myBoard.putBoard();
                 // verifie si gagnant
