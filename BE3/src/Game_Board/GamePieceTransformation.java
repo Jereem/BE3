@@ -17,7 +17,5 @@ public interface GamePieceTransformation {
      *
      * @param p
      */
-    public void transformation(Game_Piece p) {
-
-    }
+    public void transformation(Game_Piece p);
 }
