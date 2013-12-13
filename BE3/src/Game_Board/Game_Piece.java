@@ -22,22 +22,6 @@ public class Game_Piece {
         this.couleur = this.name.getColor();
         this.unnamed_Board = null;
     }
-    
-    /**
-     *
-     * @param b
-     * @param aalive
-     * @param c
-     * @param s
-     * @param uB
-     */
-    public Game_Piece(Box b, boolean aalive, Color c, Player s, Board uB) {
-        this.coordinates = b;
-        this.isAlive = aalive;
-        this.name = s;
-        this.couleur = this.name.getColor();
-        this.unnamed_Board = uB;
-    }
 
     /**
      *
