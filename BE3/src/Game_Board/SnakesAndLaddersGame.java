@@ -31,7 +31,6 @@ public class SnakesAndLaddersGame extends Game {
             myPlayers.add(pPlayer);
             System.out.println(i);
         }
-        this.isAlive = true;
         this.myRules = "Snakes and ladders Rules";
     }
     
@@ -46,10 +45,18 @@ public class SnakesAndLaddersGame extends Game {
                 monDe.setValue();
                 // avance le pion sur la case
                 int index = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getIndex();
-                int new_case = monDe.getValue()+index;
-                ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinate(myBoard.getPath(new_case));
-                int mouvement = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getMouvement();
                 //nouvelle valeur de la case : monDe.value + index;
+                int new_case = monDe.getValue()+index;
+                //on déplace le pion
+                ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinates(myBoard.getPath(new_case));
+                //on récupère sa nouvelle case
+                index = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getIndex();
+                //on récupère le mouvement associé
+                int mouvement = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getMouvement();
+                //on calcul la valeur de la nouvelle case + mouvement
+                new_case = index + mouvement;
+                //on re déplace le pion
+                ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinates(myBoard.getPath(new_case));
                 
                 
                 

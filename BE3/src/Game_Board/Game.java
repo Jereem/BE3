@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public abstract class Game {
 	protected ArrayList<Player> myPlayers = new ArrayList<>();
 	protected String myRules;
-        protected boolean isAlive;        
 
     /**
      *
