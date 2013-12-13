@@ -11,7 +11,7 @@ public class CheckerBox extends Box{
 	private int column;
         private Color couleur;
 
-	public CheckerBox(int aNbLine, int aNbColumn) {
+	public CheckerBox() {
 		throw new UnsupportedOperationException();
 	}
 
@@ -38,4 +38,14 @@ public class CheckerBox extends Box{
 	public void setCouleur(Color aPCouleur) {
 		this.couleur = aPCouleur;
 	}
+        
+        @Override
+    public void putBox() {
+        System.out.println("");
+        System.out.print("Box number : ");
+        System.out.println(this.line);
+        System.out.println("-");
+        System.out.println(this.column);
+        super.putBox();
+    }
 }

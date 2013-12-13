@@ -34,9 +34,7 @@ public class LineBoard extends Board {
     
     @Override
     public void putBoard() {
-        System.out.print("Board of ");
-        System.out.print(this.nbBox);
-        System.out.println(" Box");
+        super.putBoard();
         for (int i = 0; i < this.path.length; i++) {
             path[i].putBox();
         }

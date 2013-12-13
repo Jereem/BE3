@@ -11,14 +11,16 @@ public class CheckerBoard extends Board {
 
     private int height;
     private int width;
-    private final CheckerBox checker[][] = new CheckerBox[height][width];
+    private CheckerBox[][] checker = new CheckerBox[height][width];
 
     public CheckerBoard(int pNbBox) {
         super();
         this.height = (int) sqrt(nbBox);
         this.width = (int) sqrt(nbBox);
+        this.checker = new CheckerBox[height][width];
         for (int i = 0; i < this.height; i++) {
             for (int j = 0; j < this.width; j++) {
+                this.checker[i][j] = new CheckerBox();
                 this.checker[i][j].setLine(i);
                 this.checker[i][j].setColumn(j);
                 if (i % 2 == j % 2) {
@@ -34,6 +36,16 @@ public class CheckerBoard extends Board {
     @Override
     public String toString() {
         return super.toString() + "\n" + "Hauteur : " + this.height + "\n" + "Largeur : " + this.width;
+    }
+    
+    @Override
+    public void putBoard() {
+        super.putBoard();
+        for (int i = 0; i < this.height; i++) {
+            for (int j = 0; j < this.width; j++) {
+            this.checker[i][j].putBox();
+            }
+        }
     }
 
 }
