@@ -45,6 +45,7 @@ public class Main {
         
     SnakesAndLaddersGame myGame = new SnakesAndLaddersGame();
     myGame.putGame();
+    myGame.play();
     /*
     ArrayList<Player> p; //liste des joueurs
     String s="coucou"; //règles du jeu

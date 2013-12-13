@@ -16,10 +16,9 @@ public class Dice {
      * @param val_max
      */
     public Dice (int val_min,int val_max) {
-            Random r = new Random();
-            //int valeur = valeurMin + r.nextInt(valeurMax - valeurMin)
-            int valeur = val_min + r.nextInt(val_max-val_min);
-            this.value = valeur;
+            this.val_max=val_max;
+            this.val_min=val_min;
+            this.value =val_min;
         }
 
     /**
@@ -35,6 +34,6 @@ public class Dice {
      */
     public void setValue() {
             Random r = new Random();
-            this.value = val_min + r.nextInt(val_max-val_min);
+            this.value = this.val_min + r.nextInt(this.val_max-this.val_min);
 	}
 }

@@ -38,9 +38,12 @@ public class SnakesAndLaddersGame extends Game {
         Dice monDe = new Dice(1,6);
         //loop
         boolean isPlaying = true; //bouclera tant que personne n'aura gagné --> is playing = partie en cours
+        int test = -1;
         while (isPlaying = true){
                 // on prend un joueur
             for (Player elem : myPlayers) {
+                test++;
+                System.out.println("test" + test);
                 // lance le dès
                 monDe.setValue();
                 // avance le pion sur la case
@@ -48,6 +51,7 @@ public class SnakesAndLaddersGame extends Game {
                 // nouvelle valeur de la case : monDe.value + index;
                 int new_case = monDe.getValue()+index;
                 // on déplace le pion
+                if (new_case>31){new_case = 31;}
                 ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinates(myBoard.getPath(new_case));
                 // on récupère sa nouvelle case
                 index = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getIndex();
@@ -56,10 +60,12 @@ public class SnakesAndLaddersGame extends Game {
                 // on calcul la valeur de la nouvelle case + mouvement
                 new_case = index + mouvement;
                 // on re déplace le pion
+                if (new_case>31){new_case = 31;}
                 ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinates(myBoard.getPath(new_case));
                 if(new_case>=31){
                 isPlaying = false;
                 elem.setWinning_counter();
+                System.out.println("Player " + elem.getName() + " won !!");
                 }
                 // affiche plateau
                 this.myBoard.putBoard();
