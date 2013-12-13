@@ -36,20 +36,37 @@ public class SnakesAndLaddersGame extends Game {
     }
     
     public void play(){
+        Dice monDe = new Dice(1,6);
         //loop
-        // prend un joueur
-        // lance le dès
-        // avance le pion sur la case
-        // prend l'echelle une fois le cas echeant
-        // affiche plateau
-        // verifie si gagnant
+        boolean isPlaying = true;
+        while (isPlaying = true){
+            for (Player elem : myPlayers) {
+                // prend un joueur
+                // lance le dès
+                monDe.setValue();
+                // avance le pion sur la case
+                int index = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getIndex();
+                int new_case = monDe.getValue()+index;
+                ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinate(myBoard.getPath(new_case));
+                int mouvement = ((LineBox)((SnakesAndLaddersPlayer)elem).getMyGamePiece().getCoordinates()).getMouvement();
+                //nouvelle valeur de la case : monDe.value + index;
+                
+                
+                
+                // prend l'echelle une fois le cas echeant
+                // affiche plateau
+                this.myBoard.putBoard();
+                // verifie si gagnant
+            
+        }
+        }
     }
     
     @Override
     public void putGame(){
-        for (Player elem : myPlayers) {
+         
                 super.putGame();
                 myBoard.putBoard();
-            }
+            
     }
 }
