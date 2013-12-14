@@ -70,7 +70,6 @@ public class SnakesAndLaddersGame extends Game {
                 // affiche plateau
                 this.myBoard.putBoard();
                 // verifie si gagnant
-            
         }
         }
     }
