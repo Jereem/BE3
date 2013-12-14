@@ -20,9 +20,6 @@ public class CheckerBox extends Box {
      *
      */
     public CheckerBox() {
-        this.line = 0;
-        this.column = 0;
-        this.couleur = Color.WHITE;
         throw new UnsupportedOperationException();
     }
 

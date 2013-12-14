@@ -61,19 +61,7 @@ public class CheckerBoardTest {
         CheckerBoard instance = new CheckerBoard(2);
         instance.putBoard();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of putBoard method, of class CheckerBoard.
-     */
-    @Test
-    public void testPutBoard() {
-        System.out.println("putBoard");
-        CheckerBoard instance = null;
-        instance.putBoard();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
