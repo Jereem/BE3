@@ -62,7 +62,7 @@ public class SnakesAndLaddersGame extends Game {
                 // on re déplace le pion
                 if (new_case>31){new_case = 31;}
                 ((SnakesAndLaddersPlayer)elem).getMyGamePiece().setCoordinates(myBoard.getPath(new_case));
-                if(new_case>=31){
+                if(new_case==31){
                 isPlaying = false;
                 elem.setWinning_counter();
                 System.out.println("Player " + elem.getName() + " won !!");
