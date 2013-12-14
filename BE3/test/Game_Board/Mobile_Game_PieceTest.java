@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Djo
+ * @author teddy.delavallee
  */
 public class Mobile_Game_PieceTest {
     
@@ -39,28 +39,14 @@ public class Mobile_Game_PieceTest {
     }
 
     /**
-     * Test of getListMovement method, of class Mobile_Game_Piece.
+     * Test of setPossibility method, of class Mobile_Game_Piece.
      */
     @Test
-    public void testGetListMovement() {
-        System.out.println("getListMovement");
+    public void testSetPossibility() {
+        System.out.println("setPossibility");
+        Box[] possibility = null;
         Mobile_Game_Piece instance = null;
-        Enum expResult = null;
-        Enum result = instance.getListMovement();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setListMovement method, of class Mobile_Game_Piece.
-     */
-    @Test
-    public void testSetListMovement() {
-        System.out.println("setListMovement");
-        Enum aListMovement = null;
-        Mobile_Game_Piece instance = null;
-        instance.setListMovement(aListMovement);
+        instance.setPossibility(possibility);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -71,10 +57,10 @@ public class Mobile_Game_PieceTest {
     @Test
     public void testMove() {
         System.out.println("move");
-        Object aGame_Piece_p = null;
-        Object aListMovement_Enum = null;
+        Mobile_Game_Piece mgp = null;
+        Box b = null;
         Mobile_Game_Piece instance = null;
-        instance.move(aGame_Piece_p, aListMovement_Enum);
+        instance.move(mgp, b);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

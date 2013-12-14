@@ -6,7 +6,6 @@
 
 package Game_Board;
 
-import java.awt.Color;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -50,7 +49,7 @@ public class LineBoxTest {
         int result = instance.getIndex();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -63,7 +62,7 @@ public class LineBoxTest {
         LineBox instance = new LineBox();
         instance.setIndex(pIndex);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -77,7 +76,7 @@ public class LineBoxTest {
         int result = instance.getMouvement();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -90,7 +89,7 @@ public class LineBoxTest {
         LineBox instance = new LineBox();
         instance.setMouvement(pMouvement);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -100,10 +99,9 @@ public class LineBoxTest {
     public void testPutBox() {
         System.out.println("putBox");
         LineBox instance = new LineBox();
-        Board uB = null;
-        Game_Piece pPiece = new Game_Piece(instance, true , Color.BLUE , "Ted", uB);
-        instance.addGamePiece(pPiece);
         instance.putBox();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

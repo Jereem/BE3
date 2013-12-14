@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author teddy.delavallee
  */
-public class CheckerBoardTest {
+public class SnakesAndLaddersBoardTest {
     
-    public CheckerBoardTest() {
+    public SnakesAndLaddersBoardTest() {
     }
     
     @BeforeClass
@@ -38,28 +38,8 @@ public class CheckerBoardTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of toString method, of class CheckerBoard.
-     */
     @Test
-    public void testToString() {
-        System.out.println("toString");
-        CheckerBoard instance = null;
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of putBoard method, of class CheckerBoard.
-     */
-    @Test
-    public void testPutBoard() {
-        System.out.println("putBoard");
-        CheckerBoard instance = null;
-        instance.putBoard();
+    public void testSomeMethod() {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

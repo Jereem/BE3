@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author jeremygillet
+ * @author teddy.delavallee
  */
 public class DiceTest {
     
@@ -58,10 +58,8 @@ public class DiceTest {
     @Test
     public void testSetValue() {
         System.out.println("setValue");
-        int val_min = 0;
-        int val_max = 0;
         Dice instance = null;
-        instance.setValue(val_min, val_max);
+        instance.setValue();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

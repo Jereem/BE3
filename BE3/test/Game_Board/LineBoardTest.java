@@ -6,7 +6,6 @@
 
 package Game_Board;
 
-import java.awt.Color;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -43,14 +42,29 @@ public class LineBoardTest {
      * Test of getPath method, of class LineBoard.
      */
     @Test
-    public void testGetPath() {
+    public void testGetPath_0args() {
         System.out.println("getPath");
         LineBoard instance = new LineBoard();
         LineBox[] expResult = null;
         LineBox[] result = instance.getPath();
-        //assertArrayEquals(expResult, result);
+        assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getPath method, of class LineBoard.
+     */
+    @Test
+    public void testGetPath_int() {
+        System.out.println("getPath");
+        int n = 0;
+        LineBoard instance = new LineBoard();
+        LineBox expResult = null;
+        LineBox result = instance.getPath(n);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -59,15 +73,10 @@ public class LineBoardTest {
     @Test
     public void testPutBoard() {
         System.out.println("putBoard");
-        LineBox instance1 = new LineBox();
-        Board uB = null;
-        Game_Piece pPiece = new Game_Piece(instance1, true , Color.BLUE , "Ted", uB);
-        SnakesAndLaddersBoard instance = new SnakesAndLaddersBoard();
-        int n = 5;
-        instance.getPath(n).addGamePiece(pPiece);
+        LineBoard instance = new LineBoard();
         instance.putBoard();
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
     
 }

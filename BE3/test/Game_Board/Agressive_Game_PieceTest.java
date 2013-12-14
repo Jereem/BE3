@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author teddy.delavallee
  */
-public class BoardTest {
+public class Agressive_Game_PieceTest {
     
-    public BoardTest() {
+    public Agressive_Game_PieceTest() {
     }
     
     @BeforeClass
@@ -39,40 +39,32 @@ public class BoardTest {
     }
 
     /**
-     * Test of getNbBox method, of class Board.
+     * Test of attack method, of class Agressive_Game_Piece.
      */
     @Test
-    public void testGetNbBox() {
-        System.out.println("getNbBox");
-        Board instance = new Board();
-        int expResult = 0;
-        int result = instance.getNbBox();
+    public void testAttack() {
+        System.out.println("attack");
+        Game_Piece p1 = null;
+        Game_Piece p2 = null;
+        Box aBox_b = null;
+        Agressive_Game_Piece instance = null;
+        instance.attack(p1, p2, aBox_b);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of confirmAttack method, of class Agressive_Game_Piece.
+     */
+    @Test
+    public void testConfirmAttack() {
+        System.out.println("confirmAttack");
+        Game_Piece p1 = null;
+        Game_Piece p2 = null;
+        Agressive_Game_Piece instance = null;
+        boolean expResult = false;
+        boolean result = instance.confirmAttack(p1, p2);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setNbBox method, of class Board.
-     */
-    @Test
-    public void testSetNbBox() {
-        System.out.println("setNbBox");
-        int pNbBox = 0;
-        Board instance = new Board();
-        instance.setNbBox(pNbBox);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of putBoard method, of class Board.
-     */
-    @Test
-    public void testPutBoard() {
-        System.out.println("putBoard");
-        Board instance = new Board();
-        instance.putBoard();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

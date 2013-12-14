@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author teddy.delavallee
  */
-public class BoardTest {
+public class SnakesAndLaddersGameTest {
     
-    public BoardTest() {
+    public SnakesAndLaddersGameTest() {
     }
     
     @BeforeClass
@@ -39,40 +39,25 @@ public class BoardTest {
     }
 
     /**
-     * Test of getNbBox method, of class Board.
+     * Test of play method, of class SnakesAndLaddersGame.
      */
     @Test
-    public void testGetNbBox() {
-        System.out.println("getNbBox");
-        Board instance = new Board();
-        int expResult = 0;
-        int result = instance.getNbBox();
-        assertEquals(expResult, result);
+    public void testPlay() {
+        System.out.println("play");
+        SnakesAndLaddersGame instance = new SnakesAndLaddersGame();
+        instance.play();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setNbBox method, of class Board.
+     * Test of putGame method, of class SnakesAndLaddersGame.
      */
     @Test
-    public void testSetNbBox() {
-        System.out.println("setNbBox");
-        int pNbBox = 0;
-        Board instance = new Board();
-        instance.setNbBox(pNbBox);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of putBoard method, of class Board.
-     */
-    @Test
-    public void testPutBoard() {
-        System.out.println("putBoard");
-        Board instance = new Board();
-        instance.putBoard();
+    public void testPutGame() {
+        System.out.println("putGame");
+        SnakesAndLaddersGame instance = new SnakesAndLaddersGame();
+        instance.putGame();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

@@ -6,7 +6,6 @@
 
 package Game_Board;
 
-import java.awt.Color;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -49,7 +48,7 @@ public class BoxTest {
         Box instance = new Box();
         instance.setIsBusy(p);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -63,7 +62,7 @@ public class BoxTest {
         boolean result = instance.getIsBusy();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -76,7 +75,7 @@ public class BoxTest {
         Box instance = new Box();
         instance.addGamePiece(pPiece);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -87,10 +86,9 @@ public class BoxTest {
         System.out.println("delGamePiece");
         Game_Piece pPiece = null;
         Box instance = new Box();
-        instance.addGamePiece(pPiece);
         instance.delGamePiece(pPiece);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -100,12 +98,10 @@ public class BoxTest {
     public void testDelGamePiece_int() {
         System.out.println("delGamePiece");
         int nbPiece = 0;
-        Game_Piece pPiece = null;
         Box instance = new Box();
-        instance.addGamePiece(pPiece);
         instance.delGamePiece(nbPiece);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -115,12 +111,9 @@ public class BoxTest {
     public void testPutBox() {
         System.out.println("putBox");
         Box instance = new Box();
-        Board uB = null;
-        Game_Piece pPiece = new Game_Piece(instance, true , Color.BLUE , "Ted", uB);
-        instance.addGamePiece(pPiece);
         instance.putBox();
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
     
 }

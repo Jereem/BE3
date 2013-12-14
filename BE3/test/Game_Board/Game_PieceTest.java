@@ -18,9 +18,9 @@ import static org.junit.Assert.*;
  *
  * @author teddy.delavallee
  */
-public class PlayerTest {
+public class Game_PieceTest {
     
-    public PlayerTest() {
+    public Game_PieceTest() {
     }
     
     @BeforeClass
@@ -40,104 +40,105 @@ public class PlayerTest {
     }
 
     /**
-     * Test of getName method, of class Player.
+     * Test of getCoordinates method, of class Game_Piece.
+     */
+    @Test
+    public void testGetCoordinates() {
+        System.out.println("getCoordinates");
+        Game_Piece instance = null;
+        Box expResult = null;
+        Box result = instance.getCoordinates();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setCoordinates method, of class Game_Piece.
+     */
+    @Test
+    public void testSetCoordinates() {
+        System.out.println("setCoordinates");
+        Box aCoordinates = null;
+        Game_Piece instance = null;
+        instance.setCoordinates(aCoordinates);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setIsAlive method, of class Game_Piece.
+     */
+    @Test
+    public void testSetIsAlive() {
+        System.out.println("setIsAlive");
+        Game_Piece instance = null;
+        instance.setIsAlive();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getCouleur method, of class Game_Piece.
+     */
+    @Test
+    public void testGetCouleur() {
+        System.out.println("getCouleur");
+        Game_Piece instance = null;
+        Color expResult = null;
+        Color result = instance.getCouleur();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setCouleur method, of class Game_Piece.
+     */
+    @Test
+    public void testSetCouleur() {
+        System.out.println("setCouleur");
+        Color aCouleur = null;
+        Game_Piece instance = null;
+        instance.setCouleur(aCouleur);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getName method, of class Game_Piece.
      */
     @Test
     public void testGetName() {
         System.out.println("getName");
-        Player instance = new Player();
-        String expResult = "";
-        String result = instance.getName();
+        Game_Piece instance = null;
+        Player expResult = null;
+        Player result = instance.getName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setName method, of class Player.
+     * Test of setName method, of class Game_Piece.
      */
     @Test
     public void testSetName() {
         System.out.println("setName");
-        String aAttribute = "";
-        Player instance = new Player();
-        instance.setName(aAttribute);
+        Player aName = null;
+        Game_Piece instance = null;
+        instance.setName(aName);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getColor method, of class Player.
-     */
-    @Test
-    public void testGetColor() {
-        System.out.println("getColor");
-        Player instance = new Player();
-        Color expResult = null;
-        Color result = instance.getColor();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setColor method, of class Player.
-     */
-    @Test
-    public void testSetColor() {
-        System.out.println("setColor");
-        Color aColor = null;
-        Player instance = new Player();
-        instance.setColor(aColor);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getWinning_counter method, of class Player.
-     */
-    @Test
-    public void testGetWinning_counter() {
-        System.out.println("getWinning_counter");
-        Player instance = new Player();
-        int expResult = 0;
-        int result = instance.getWinning_counter();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setWinning_counter method, of class Player.
-     */
-    @Test
-    public void testSetWinning_counter() {
-        System.out.println("setWinning_counter");
-        Player instance = new Player();
-        instance.setWinning_counter();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of putPlayer method, of class Player.
-     */
-    @Test
-    public void testPutPlayer() {
-        System.out.println("putPlayer");
-        Player instance = new Player();
-        instance.putPlayer();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class Player.
+     * Test of toString method, of class Game_Piece.
      */
     @Test
     public void testToString() {
         System.out.println("toString");
-        Player instance = new Player();
+        Game_Piece instance = null;
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
