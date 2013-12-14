@@ -15,6 +15,14 @@ public class Game_Piece {
     private Player name;
     private Board unnamed_Board;
 
+    public Game_Piece() {
+        this.coordinates = null;
+        this.isAlive = true;
+        this.name = null;
+        this.couleur = this.name.getColor();
+        this.unnamed_Board = null;
+    }
+    
     public Game_Piece(Player pName) {
         this.coordinates = null;
         this.isAlive = true;

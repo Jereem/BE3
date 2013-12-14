@@ -73,7 +73,7 @@ public class SnakesAndLaddersGame extends Game {
                 this.myBoard.putBoard();  
             }
         }
-    }
+        }
     
     @Override
     public void putGame(){

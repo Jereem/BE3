@@ -62,6 +62,22 @@ public class BoxTest {
         boolean result = instance.getIsBusy();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+    /**
+     * Test of setIsBusy method, of class Box.
+     */
+    @Test
+    public void testSetIsBusy() {
+        System.out.println("setIsBusy");
+        boolean p = true;
+        Box instance = new Box();
+        instance.setIsBusy(p);
+        boolean expResult = true;
+        boolean result = instance.getIsBusy();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 

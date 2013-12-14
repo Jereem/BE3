@@ -58,9 +58,12 @@ public class BoardTest {
     @Test
     public void testSetNbBox() {
         System.out.println("setNbBox");
-        int pNbBox = 0;
+        int pNbBox = 3;
         Board instance = new Board();
         instance.setNbBox(pNbBox);
+        int expResult = 3;
+        int result = instance.getNbBox();
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
